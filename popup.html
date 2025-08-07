@@ -1,0 +1,76 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      font-family: sans-serif;
+      padding: 10px;
+      width: 220px;
+    }
+    h3 {
+      margin-top: 0;
+      text-align: center;
+    }
+    input[type="color"] {
+      width: 100%;
+      height: 40px;
+      border: 1px solid #ccc;
+      padding: 0;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h3>Toolbar Color</h3>
+  <input type="color" id="colorPicker">
+
+  <script src="popup.js" defer></script> 
+</body>
+</html> -->
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Color Chooser</title>
+  <style>
+    body {
+      width: 220px;
+      padding: 10px;
+      font-family: sans-serif;
+      text-align: center;
+    }
+    #color-options {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 8px;
+      margin-bottom: 12px;
+    }
+    .swatch {
+      width: 40px;
+      height: 40px;
+      border: 2px solid #ccc;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: transform 0.1s ease;
+    }
+    .swatch:hover {
+      border-color: #000;
+    }
+    .swatch.selected {
+      border-color: #0066cc;
+      transform: scale(1.15);
+      box-shadow: 0 0 5px rgba(0,0,0,0.5);
+    }
+  </style>
+</head>
+
+<body>
+  <div id="color-options">
+    </div>
+  <script src="popup.js"></script>
+</body>
+</html>

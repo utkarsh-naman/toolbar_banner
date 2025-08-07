@@ -1,23 +1,15 @@
 {
-  "manifest_version": 3,
-  "name": "Custom Toolbar Banner Theme",
-  "description": "Theme with a custom toolbar image and option to upload your own.",
-  "version": "1.0",
+  "manifest_version": 2,
+  "name": "Custom Toolbar Theme with Penguin",
+  "version": "1.1",
+  "description": "Toolbar theme with fixed penguin image and customizable background color.",
   "permissions": ["theme", "storage"],
-  "action": {
-    "default_title": "Customize Toolbar Banner",
-    "default_popup": "options.html"
-  },
   "background": {
-    "service_worker": "background.js"
+    "scripts": ["background.js"]
   },
-  "theme": {
-    "images": {
-      "theme_frame": "banner.png"
-    },
-    "colors": {
-      "frame": [100, 100, 255],
-      "tab_background_text": [255, 255, 255]
-    }
+  "browser_action": {
+    "default_title": "Customize Toolbar Color",
+    "default_popup": "popup.html",
+    "default_icon": "background.png"
   }
 }
