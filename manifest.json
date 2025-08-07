@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "Custom Toolbar Banner Theme",
+  "description": "Theme with a custom toolbar image and option to upload your own.",
+  "version": "1.0",
+  "permissions": ["theme", "storage"],
+  "action": {
+    "default_title": "Customize Toolbar Banner",
+    "default_popup": "options.html"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "theme": {
+    "images": {
+      "theme_frame": "banner.png"
+    },
+    "colors": {
+      "frame": [100, 100, 255],
+      "tab_background_text": [255, 255, 255]
+    }
+  }
+}
